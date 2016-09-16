@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAB91"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="select the item you want to appear in the test.."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#b71c1c"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_background">
+
+        <CheckBox
+            android:id="@+id/rd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:layout_marginTop="10dp"
+            android:text="a i u e o"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/rd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rd1"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:text="ka ki ku ke ko"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/rd3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rd2"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:text="sa shi su se so"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/rd4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rd3"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:text="ta chi tsu te to"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/rd5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rd4"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:text="na ni nu ne no"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/rd6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rd5"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:text="ha hi fu he ho"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/rd7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rd6"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:text="ma mi mu me mo"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/rd8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rd7"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:text="ya yu yo"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/rd9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rd8"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:text="ra ri ru re ro"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/rd10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rd9"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:text="wa wo n"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/textView5"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/r11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="kya kyu kyo"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/r12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r11"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="sha shu sho"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/r13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r12"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="cha chu cho"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/r14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r13"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="nya nyu nyo"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/r15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r14"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="hya hyu hyo"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/r16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r15"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="mya myu myo"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/r17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r16"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="rya ryu ryo"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/r18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r17"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="New CheckBox"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/r19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r18"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="tenten"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/r20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r19"
+            android:layout_marginLeft="@dimen/padding_select_test"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="maru"
+            android:textColor="@color/text_main_color"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_background"
+        android:text="OK"
+        android:textColor="@color/text_color"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

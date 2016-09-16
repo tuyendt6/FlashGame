@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="strock_background_color">#f44336</color>
+    <color name="background_color">#ff7043</color>
+    <color name="text_color">#ffc400</color>
+    <color name="text_main_color">#e0e0e0</color>
+
+
 </resources>
