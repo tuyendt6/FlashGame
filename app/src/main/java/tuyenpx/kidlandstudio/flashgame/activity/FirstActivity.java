@@ -21,6 +21,8 @@ public class FirstActivity extends Activity implements View.OnClickListener {
         mHiragana.setOnClickListener(this);
         Button mKatakana = (Button) findViewById(R.id.btn_katakana);
         mKatakana.setOnClickListener(this);
+        Button mAlphabet = (Button) findViewById(R.id.btn_alphabet);
+        mAlphabet.setOnClickListener(this);
     }
 
     @Override
@@ -34,6 +36,10 @@ public class FirstActivity extends Activity implements View.OnClickListener {
             case R.id.btn_katakana:
                 Util.isHiRaGaNa = false;
                 startActivity(new Intent(getBaseContext(), SelectionTestAcivity.class));
+                finish();
+                break;
+            case R.id.btn_alphabet:
+                startActivity(new Intent(getBaseContext(), LearnAlphabet.class));
                 finish();
                 break;
         }

@@ -1,13 +1,17 @@
 package tuyenpx.kidlandstudio.flashgame.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -48,6 +52,32 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+
+        edPwd.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if (s.length() == mQuestion.getmValue().length()) {
+                    View view = MainActivity.this.getCurrentFocus();
+                    if (view != null) {
+                        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                    }
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
         String question = getIntent().getStringExtra(SelectionTestAcivity.QUESTION);
         String[] s = question.split(";");
         for (int i = 0; i < s.length; i++) {
@@ -147,6 +177,8 @@ public class MainActivity extends AppCompatActivity {
                 Random random = new Random();
                 int select = random.nextInt(mkatakana.size());
                 mQuestion = mkatakana.get(select);
+                mkatakana.remove(select);
+                text_result.setVisibility(View.GONE);
                 mTvQuestion.setText(mQuestion.getmKey());
                 mAnwser.setText("");
                 return true;
